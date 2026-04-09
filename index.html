@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 { color: #333; }
+        a { color: #667eea; text-decoration: none; }
+        .endpoint {
+            background: #f0f0f0;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Task Manager API</h1>
+        <p>API REST de gestion de tâches construite avec <strong>NestJS</strong> et <strong>TypeScript</strong>.</p>
+        
+        <h2>📚 Documentation</h2>
+        <p>Swagger UI : <code>http://localhost:3000/api-docs</code></p>
+        
+        <h2>🔧 Endpoints</h2>
+        <div class="endpoint">GET /tasks - Liste toutes les tâches</div>
+        <div class="endpoint">GET /tasks/:id - Détail d'une tâche</div>
+        <div class="endpoint">POST /tasks - Crée une tâche</div>
+        <div class="endpoint">PUT /tasks/:id - Met à jour une tâche</div>
+        <div class="endpoint">DELETE /tasks/:id - Supprime une tâche</div>
+        <div class="endpoint">GET /tasks/stats - Statistiques</div>
+        
+        <h2>👨‍💻 Auteur</h2>
+        <p>Souleyman</p>
+        
+        <h2>🔗 Liens</h2>
+        <p>📦 Code source : <a href="https://github.com/Souleyman/task-manager-api">github.com/Souleyman/task-manager-api</a></p>
+    </div>
+</body>
+</html>
