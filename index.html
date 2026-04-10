@@ -20,6 +20,7 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.2);
         }
         h1 { color: #333; }
+        h2 { color: #667eea; }
         a { color: #667eea; text-decoration: none; }
         .endpoint {
             background: #f0f0f0;
@@ -27,6 +28,15 @@
             margin: 10px 0;
             border-radius: 5px;
             font-family: monospace;
+        }
+        .method {
+            font-weight: bold;
+            color: #fff;
+            background: #667eea;
+            padding: 2px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -39,12 +49,15 @@
         <p>Swagger UI : <code>http://localhost:3000/api-docs</code></p>
         
         <h2>🔧 Endpoints</h2>
-        <div class="endpoint">GET /tasks - Liste toutes les tâches</div>
-        <div class="endpoint">GET /tasks/:id - Détail d'une tâche</div>
-        <div class="endpoint">POST /tasks - Crée une tâche</div>
-        <div class="endpoint">PUT /tasks/:id - Met à jour une tâche</div>
-        <div class="endpoint">DELETE /tasks/:id - Supprime une tâche</div>
-        <div class="endpoint">GET /tasks/stats - Statistiques</div>
+        <div class="endpoint"><span class="method">GET</span> /tasks - Liste toutes les tâches</div>
+        <div class="endpoint"><span class="method">GET</span> /tasks/:id - Détail d'une tâche</div>
+        <div class="endpoint"><span class="method">POST</span> /tasks - Crée une tâche</div>
+        <div class="endpoint"><span class="method">PUT</span> /tasks/:id - Met à jour une tâche</div>
+        <div class="endpoint"><span class="method">DELETE</span> /tasks/:id - Supprime une tâche</div>
+        <div class="endpoint"><span class="method">GET</span> /tasks/stats - Statistiques</div>
+        <div class="endpoint"><span class="method">GET</span> /tasks/overdue - Tâches en retard</div>
+        <div class="endpoint"><span class="method">GET</span> /tasks/priority/:priority - Par priorité</div>
+        <div class="endpoint"><span class="method">GET</span> /tasks/status/:status - Par statut</div>
         
         <h2>👨‍💻 Auteur</h2>
         <p>Souleyman</p>
